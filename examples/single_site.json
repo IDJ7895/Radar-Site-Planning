@@ -1,0 +1,13 @@
+{
+  "site_id": "research-01",
+  "site_name": "Synthetic research site 01",
+  "brand": "Example Instruments",
+  "model": "Laboratory Demo",
+  "radar_category": "RESEARCH",
+  "latitude": 0.0,
+  "longitude": 0.0,
+  "instrumented_max_range_km": 10.0,
+  "peak_power_kw": 0.1,
+  "frequency_ghz": 9.4,
+  "antenna_gain_dbi": 20.0
+}
