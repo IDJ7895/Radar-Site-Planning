@@ -1,0 +1,41 @@
+radars:
+  - site_id: RAD-FX-01
+    site_name: Fixed Sector Site #1
+    brand: Lockheed Martin
+    model: AN/TPS-77
+    radar_category: Early_Warning
+    mobility: FIXED
+    tech: FULL_AESA
+    lat: 1512000.0
+    lon: 625000.0
+    ground_elevation_amsl: 120.0
+    mast_height_agl: 30.0
+    instrumented_max_range_km: 470.0
+    frequency_ghz: 3.0
+    peak_power_kw: 100.0
+    pulse_width_us: 15.0
+    antenna_gain_dbi: 40.0
+    electronic_tilt_deg: 2.0
+    mechanical_tilt_deg: 0.0
+    field_of_regard_az_deg: 360.0
+    is_active: true
+  - site_id: RAD-MB-07
+    site_name: Tactical Mobile Site #7
+    brand: Saab
+    model: Giraffe AMB
+    radar_category: Short_Range_AD
+    mobility: MOBILE_TACTICAL
+    tech: FULL_AESA
+    lat: 1584000.0
+    lon: 675000.0
+    ground_elevation_amsl: 45.0
+    mast_height_agl: 10.0
+    instrumented_max_range_km: 120.0
+    frequency_ghz: 3.0
+    peak_power_kw: 40.0
+    pulse_width_us: 15.0
+    antenna_gain_dbi: 36.0
+    electronic_tilt_deg: 2.0
+    mechanical_tilt_deg: 0.0
+    field_of_regard_az_deg: 360.0
+    is_active: true

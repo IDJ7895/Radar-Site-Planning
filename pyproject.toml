@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radar-site-planning"
+version = "1.0.0"
+description = "Integrated Multi-Radar Planning Suite & RF Simulation Tool (11+ Radars)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.11",
+    "sqlalchemy>=2.0",
+    "pydantic>=2.10",
+    "pyyaml>=6.0",
+    "pyproj>=3.6",
+    "shapely>=2.0",
+    "rasterio>=1.3",
+    "matplotlib>=3.8",
+    "plotly>=5.18",
+    "folium>=0.15",
+    "geojson>=3.0",
+    "fastapi>=0.110",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.27",
+    "ruff>=0.9",
+    "build>=1.2",
+]
+cloud = [
+    "pystac-client>=0.7",
+    "planetary-computer>=1.0",
+]
+
+[project.scripts]
+radar-catalog = "radar_site_planning.cli:main"
+radar-suite = "radar_site_planning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

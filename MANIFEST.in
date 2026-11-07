@@ -1,0 +1,6 @@
+include radar_db.py
+include multi_radar_suite.py
+include terrain_manager.py
+include simulate_fleet_with_db.py
+recursive-include examples *.json *.yaml
+recursive-include tests *.py
